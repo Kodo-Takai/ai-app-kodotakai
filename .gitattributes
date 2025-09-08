@@ -1,0 +1,26 @@
+# Configuración de Git para el proyecto de IA Turística
+
+# Archivos de modelos grandes
+*.pkl filter=lfs diff=lfs merge=lfs -text
+*.tflite filter=lfs diff=lfs merge=lfs -text
+*.safetensors filter=lfs diff=lfs merge=lfs -text
+
+# Archivos de datos
+*.json filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+
+# Archivos de documentación
+*.md text
+*.html text
+*.txt text
+
+# Archivos Python
+*.py text
+*.pyi text
+
+# Archivos de configuración
+*.yml text
+*.yaml text
+*.toml text
+*.cfg text
+*.ini text
