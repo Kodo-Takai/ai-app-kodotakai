@@ -1,40 +1,28 @@
-# Core ML Frameworks
 tensorflow==2.15.0
 torch==2.1.0
 transformers==4.35.0
 onnx==1.15.0
 onnxruntime==1.16.0
 
-# Mobile Optimization
-# tensorflow-lite==2.15.0  # No disponible en Windows, se instala con tensorflow
-# onnxruntime-mobile==1.16.0  # Se instala con onnxruntime
-
-# Recommendation Systems
-lightfm==1.17
 scikit-learn==1.3.0
 implicit==0.7.2
 
-# Time Series
 prophet==1.1.4
 statsmodels==0.14.0
 
-# NLP Models
 sentence-transformers==2.2.2
 datasets==2.14.0
 
-# Optimization Tools
 optimum==1.14.0
 neural-compressor==2.4.0
 
-# Data Processing
 pandas==2.1.0
 numpy==1.24.0
 scipy==1.11.0
+joblib==1.3.0
 
-# Visualization
 matplotlib==3.7.0
 seaborn==0.12.0
 
-# Utilities
 tqdm==4.66.0
 requests==2.31.0

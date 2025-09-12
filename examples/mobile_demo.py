@@ -13,7 +13,7 @@ import time
 
 class MobileAppDemo:
     def __init__(self):
-        self.base_dir = Path(__file__).parent
+        self.base_dir = Path(__file__).parent.parent  # Ir al directorio raíz del proyecto
         self.models_dir = self.base_dir / "models" / "trained"
         self.mobile_models_dir = self.base_dir / "mobile_models"
         
@@ -125,7 +125,7 @@ class MobileAppDemo:
         
         if not self.cls_model_data:
             print("❌ Modelo de clasificación no disponible")
-            return "medium"
+            return {"relevance": "medium", "confidence": 0.5, "should_notify": True}
         
         try:
             # Simular clasificación basada en palabras clave
