@@ -17,6 +17,14 @@ python quick_setup.py
 
 ## 🎯 Características
 
+### 🏨 Sistema de Recomendaciones de Hoteles
+- **IA Avanzada**: RandomForest Regressor para recomendaciones personalizadas
+- **Datos Fake Realistas**: 20 hoteles, 10 usuarios, 50 reservas históricas
+- **Filtros Inteligentes**: Presupuesto, rating, disponibilidad, estilo de viaje
+- **Razones de Match**: Explica por qué cada hotel es recomendado
+- **Salida JSON**: Formato estructurado para integración
+
+### 🎯 Sistema de Actividades Turísticas
 - **Recomendaciones Personalizadas**: Modelo MLPClassifier
 - **Clasificación de Relevancia**: Modelo RandomForest
 - **Procesamiento de Texto**: SentenceTransformer
@@ -25,6 +33,16 @@ python quick_setup.py
 
 ## 📱 Uso
 
+### 🏨 Recomendaciones de Hoteles
+```bash
+# Generar datos fake de hoteles
+python hotel_data_generator.py
+
+# Obtener recomendaciones de hoteles
+python hotel_recommendations.py
+```
+
+### 🎯 Recomendaciones de Actividades
 ```python
 from examples.basic_usage import get_recommendations
 
@@ -37,6 +55,11 @@ for rec in recommendations:
 
 ## 🤖 Modelos
 
+### 🏨 Modelos de Hoteles
+- `models/hotel_recommendations/` - Modelo RandomForest para recomendaciones de hoteles
+- `data/fake_hotel_data.json` - Datos fake de hoteles, usuarios y reservas
+
+### 🎯 Modelos de Actividades
 - `models/final/` - Modelos entrenados
 - `models/final/mobile/` - Modelos optimizados para móviles
 
@@ -48,6 +71,13 @@ for rec in recommendations:
 
 ## 🇨🇴 Datos Colombianos
 
+### 🏨 Hoteles y Alojamiento
+- **20 hoteles** en ciudades de Sucre (Sincelejo, Coveñas, Tolú, San Onofre, Galeras)
+- **Categorías**: Económico, Medio, Lujo, Boutique, Ecológico
+- **Amenities**: WiFi, Piscina, Restaurante, Spa, Estacionamiento, etc.
+- **Datos realistas**: Precios, ratings, ubicaciones, contactos
+
+### 🎯 Actividades Turísticas
 - Actividades de Sincelejo y Sucre
 - Procesamiento en español colombiano
 - Categorías: cultural, naturaleza, gastronomía
