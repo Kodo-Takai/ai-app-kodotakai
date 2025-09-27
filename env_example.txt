@@ -1,6 +1,0 @@
-# Configuración de ejemplo para Google Maps API
-# Copia este archivo como .env y configura tus valores
-
-GOOGLE_MAPS_API_KEY=tu_api_key_aqui
-DEFAULT_CITY=bogota
-DEFAULT_LANGUAGE=es
