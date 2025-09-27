@@ -26,3 +26,10 @@ seaborn==0.12.0
 
 tqdm==4.66.0
 requests==2.31.0
+
+# Google Maps Places API
+googlemaps==4.10.0
+google-api-python-client==2.108.0
+
+# Configuración y utilidades
+python-dotenv==1.0.0

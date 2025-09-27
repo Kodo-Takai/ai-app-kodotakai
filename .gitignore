@@ -21,12 +21,52 @@ wheels/
 *.egg
 MANIFEST
 
-# Virtual environments
+# Virtual Environment
 venv/
 env/
 ENV/
 env.bak/
 venv.bak/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache directories
+cache/
+*.cache
+.cache/
+
+# API Keys and sensitive data
+*.key
+*.pem
+secrets.json
+config.json
+
+# Model files (large files)
+models/trained/
+models/final/
+*.pkl
+*.joblib
+*.h5
+*.pb
+*.tflite
+
+# Data files
+data/
+*.json
+*.csv
+*.xlsx
+*.db
+*.sqlite
+
+# Logs
+*.log
+logs/
+setup_log.txt
 
 # IDE
 .vscode/
@@ -35,11 +75,7 @@ venv.bak/
 *.swo
 *~
 
-# Logs
-*.log
-logs/
-
-# Sistema operativo
+# OS
 .DS_Store
 .DS_Store?
 ._*
@@ -48,37 +84,33 @@ logs/
 ehthumbs.db
 Thumbs.db
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
 
-# pyenv
-.python-version
+# Demo and test files
+*_demo.py
+*_test.py
+test_*.py
+demo_*.py
+*_demo.json
+*_test.json
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
 
 # Coverage reports
 htmlcov/
-.tox/
 .coverage
 .coverage.*
-.cache
-nosetests.xml
 coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
+
+# Documentation build
+docs/_build/
+site/
